@@ -130,8 +130,46 @@
     </div>
 
     <div class="card center">
-      <a class="cta" href="thank-you.html">Request Information / Enroll</a>
-    </div>
+     <div class="card">
+  <h3>Request Information / Enroll</h3>
+
+  <form action="https://formspree.io/f/mlgaozbp" method="POST">
+    <p>
+      <label>Full Name</label><br>
+      <input type="text" name="name" required style="width:100%;padding:10px;margin-top:6px;">
+    </p>
+
+    <p>
+      <label>Email</label><br>
+      <input type="email" name="email" required style="width:100%;padding:10px;margin-top:6px;">
+    </p>
+
+    <p>
+      <label>Phone</label><br>
+      <input type="text" name="phone" style="width:100%;padding:10px;margin-top:6px;">
+    </p>
+
+    <p>
+      <label>Program Interest</label><br>
+      <select name="program" style="width:100%;padding:10px;margin-top:6px;">
+        <option>AI Prompt Engineering</option>
+        <option>AI for Business</option>
+        <option>AI for Careers</option>
+      </select>
+    </p>
+
+    <p>
+      <label>Message</label><br>
+      <textarea name="message" rows="5" style="width:100%;padding:10px;margin-top:6px;"></textarea>
+    </p>
+
+    <input type="hidden" name="_subject" value="New ETI AI Course Inquiry">
+
+    <button type="submit" class="cta" style="border:none;cursor:pointer;">
+      Submit Request
+    </button>
+  </form>
+</div>
   </div>
 </body>
 </html>
